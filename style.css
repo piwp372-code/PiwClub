@@ -1,0 +1,446 @@
+/* ===========================
+   PIW CLUB - STYLE.CSS
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#ffd9e9,#fff4f8);
+color:#444;
+overflow-x:hidden;
+}
+
+/* Background Glow */
+
+.background{
+position:fixed;
+inset:0;
+z-index:-1;
+background:
+radial-gradient(circle at top left,#ffb2 0%,transparent 35%),
+radial-gradient(circle at bottom right,#ffcde1 0%,transparent 40%),
+linear-gradient(#ffd9e9,#fff5fa);
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(255,255,255,.65);
+backdrop-filter:blur(18px);
+border-bottom:1px solid #ffd1e2;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+}
+
+.logo:hover img{
+animation:wiggle .5s;
+}
+
+@keyframes wiggle{
+
+0%{transform:rotate(0deg);}
+25%{transform:rotate(-10deg);}
+50%{transform:rotate(10deg);}
+75%{transform:rotate(-8deg);}
+100%{transform:rotate(0deg);}
+
+}
+
+.emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.emoji img{
+    width: 40px;
+    height: 40px;
+}
+
+.love{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.love img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo h2{
+color:#ff4f93;
+font-size:26px;
+font-weight:700;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#666;
+font-weight:600;
+transition:.25s;
+}
+
+nav a:hover{
+color:#ff4f93;
+}
+
+/* Hero */
+
+.hero{
+padding:90px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:52px;
+color:#ff4f93;
+margin-bottom:18px;
+}
+
+.hero p{
+font-size:18px;
+color:#777;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.hero button{
+padding:15px 28px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+font-size:16px;
+font-weight:bold;
+transition:.25s;
+}
+
+#rankingBtn{
+background:#ff5c9b;
+color:white;
+}
+
+#rankingBtn:hover{
+background:#ff3d86;
+transform:translateY(-3px);
+}
+
+#discordBtn{
+background:white;
+color:#ff4f93;
+border:2px solid #ff8bb9;
+}
+
+#discordBtn:hover{
+background:#ffe3ef;
+}
+
+/* Gamemode */
+
+.modes{
+padding:20px 8% 50px;
+}
+
+.modes h2{
+text-align:center;
+font-size:32px;
+color:#ff4f93;
+margin-bottom:30px;
+}
+
+.mode-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+}
+
+.mode-card{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:22px;
+text-align:center;
+cursor:pointer;
+transition:.3s;
+border:2px solid transparent;
+}
+
+.mode-card:hover{
+transform:translateY(-8px);
+border-color:#ff70aa;
+box-shadow:0 12px 30px rgba(255,120,170,.25);
+}
+
+.mode-card span{
+font-size:55px;
+}
+
+.mode-card h3{
+margin-top:15px;
+color:#ff4f93;
+}
+
+.mode-card p{
+margin-top:10px;
+color:#777;
+}
+
+/* Ranking */
+
+.ranking-section{
+padding:50px 8%;
+}
+
+#search{
+    width: 100%;
+    height: 70px;
+
+    background: #fff url("love.png") no-repeat right 25px center;
+    background-size: 25px;
+
+    border: 2px solid #ffb6d9;
+    border-radius: 20px;
+
+    padding: 0 80px 0 25px; /* beri ruang agar teks tidak menimpa ikon */
+    font-size: 15px;
+    outline: none;
+}
+
+.rank-number{
+
+font-size:28px;
+font-weight:bold;
+color:#ff4f93;
+width:55px;
+
+}
+
+.rank1{
+
+color:#FFD247;
+
+padding:8px 12px;
+
+border-radius:12px;
+
+}
+
+.rank2{
+
+color:#B8C9CE;
+
+padding:8px 12px;
+
+border-radius:12px;
+
+}
+
+.rank3{
+
+color:#C16832;
+
+padding:8px 12px;
+
+border-radius:12px;
+
+}
+
+.skin{
+
+width:58px;
+height:58px;
+
+border-radius:12px;
+
+object-fit:cover;
+
+margin-right:15px;
+
+}
+
+.left{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.device{
+
+display:flex;
+
+align-items:center;
+
+gap:6px;
+
+margin-top:4px;
+
+font-size:13px;
+
+color:#777;
+
+}
+
+.device img{
+
+width:40px;
+
+height:40px;
+
+}
+
+.mode-card img{
+    width:64px;
+    height:64px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.title{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.title h2{
+color:#ff4f93;
+}
+
+.title input{
+padding:12px 18px;
+border-radius:12px;
+border:2px solid #ffc4dc;
+outline:none;
+min-width:250px;
+}
+
+.player-card{
+background:white;
+border-radius:18px;
+padding:18px;
+margin-bottom:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 8px 25px rgba(0,0,0,.06);
+transition:.25s;
+}
+
+.player-card:hover{
+transform:scale(1.02);
+}
+
+.player-info h3{
+color:#444;
+}
+
+.player-info p{
+color:#888;
+font-size:14px;
+}
+
+.score{
+font-size:20px;
+font-weight:bold;
+color:#ff4f93;
+}
+
+/* Stats */
+
+.stats{
+padding:60px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.stat{
+background:white;
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.stat h2{
+font-size:36px;
+color:#ff4f93;
+margin-bottom:8px;
+}
+
+.stat p{
+color:#777;
+}
+
+/* Footer */
+
+footer{
+padding:35px;
+text-align:center;
+color:#777;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+.title{
+flex-direction:column;
+align-items:stretch;
+}
+
+.title input{
+width:100%;
+}
+
+}

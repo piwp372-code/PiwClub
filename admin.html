@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PIW CLUB Admin</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<div id="overlay" class="overlay"></div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <img src="logo.png">
+            <h2>PIW CLUB</h2>
+        </div>
+
+<div class="menu">
+
+    <button id="dashboardBtn" class="active">
+        🏠 Dasbor
+    </button>
+
+    <button id="playersBtn">
+        👥 Pemain
+    </button>
+
+    <button id="rankingsBtn">
+      🏆 Peringkat
+    </button>
+
+    <button>
+        📊 Statistik
+    </button>
+
+    <button>
+        ⚙ Pengaturan
+    </button>
+
+</div>
+
+        <div class="sidebar-footer">
+
+            <button class="logout">
+                🚪 Keluar
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <div class="header">
+
+          <button id="menuBtn" class="menu-btn">
+☰
+</button>
+
+            <h1>Dasbor</h1>
+
+            <input
+                id="search"
+                class="search"
+                placeholder="Cari pemain...">
+
+        </div>
+
+<!-- DASHBOARD -->
+<div id="dashboardPage">
+
+    <h2>Dashboard</h2>
+
+    <p>Total Player: <span id="totalPlayer">0</span></p>
+
+</div>
+
+<!-- PLAYERS -->
+<div id="playersPage" style="display:none;">
+
+    <div id="adminPlayers"></div>
+
+ <button class="save">
+        💾 Simpan
+    </button>
+
+<!-- RANKINGS -->
+</div>
+
+<div id="rankingsPage" style="display:none;">
+  
+<h2 class="emoji">
+    <img src="rank.png" alt="">
+    Peringkat
+</h2>
+
+    <div id="rankingList"></div>
+
+</div>
+
+    </div>
+
+</div>
+
+<script src="player.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

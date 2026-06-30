@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PIW CLUB Tiers</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Background -->
+
+<div class="background"></div>
+
+<!-- Navigation -->
+
+<header>
+
+<div class="logo">
+
+<img src="logo.png" alt="PIW CLUB">
+
+<h2>PIW CLUB</h2>
+
+</div>
+
+<nav>
+
+<a href="#">Beranda</a>
+<a href="#">Peringkat</a>
+<a href="#">Pemain</a>
+<a href="#">WhatsApp</a>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>PvP Practice</h1>
+
+<p>
+Tiers List Member Piw Di Minecraft Bedrock
+</p>
+
+<div class="hero-buttons">
+
+<button id="rankingBtn">
+Lihat Peringkat
+</button>
+
+<button id="discordBtn">
+Gabung
+</button>
+
+</div>
+
+</section>
+
+<!-- Modes -->
+
+<section class="modes">
+
+<h2>Pilih Gamemode</h2>
+
+<div class="mode-grid">
+
+<div class="mode-card" id="sword">
+    <span>⚔</span>
+    <h3>Sword</h3>
+    <p>Classic PvP</p>
+</div>
+
+<div class="mode-card" id="mace">
+    <img src="mace.png" alt="Mace">
+    <h3>Mace</h3>
+    <p>High Damage</p>
+</div>
+
+<div class="mode-card" id="elymace">
+    <img src="elytra.png" alt="ElyMace">
+    <h3>ElyMace</h3>
+    <p>Elytra Combat</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Rankings -->
+
+<section class="ranking-section">
+
+<div class="title">
+
+<h2 class="emoji">
+    <img src="rank.png" alt="">
+    Peringkat Teratas
+</h2>
+
+<input
+type="text"
+placeholder="cari pemain..."
+id="search">
+
+</div>
+
+<div id="rankingList">
+
+<!-- Ranking dibuat oleh JavaScript -->
+
+</div>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="stats">
+
+<div class="stat">
+
+<h2 id="playerCount">0</h2>
+
+<p>Players</p>
+
+</div>
+
+<div class="stat">
+
+<h2 id="matchCount">0</h2>
+
+<p>Matches</p>
+
+</div>
+
+<div class="stat">
+
+<h2 id="season">Season 3</h2>
+
+<p>Current</p>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+© 2026 PIW CLUB
+
+</p>
+
+</footer>
+
+<script src="player.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
